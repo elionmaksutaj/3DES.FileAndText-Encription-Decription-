@@ -30,7 +30,7 @@ while True:
         nonce, ciphertext = encrypt(plaintext)
         print('Nonce:', binascii.hexlify(nonce).decode('ascii'))
         print('Cipher text:', ciphertext.hex())
-    elif choice == '1':
+    elif choice == '2':
         ciphertext = bytes.fromhex(input('Enter ciphertext in hex format: '))
         nonce = binascii.unhexlify(input('Enter nonce in hex format: '))
         plaintext = decrypt(nonce, ciphertext)
