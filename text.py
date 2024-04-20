@@ -29,3 +29,6 @@ while True:
         plaintext = input('Enter plaintext: ')
         nonce, ciphertext = encrypt(plaintext)
         print('Nonce:', binascii.hexlify(nonce).decode('ascii'))
+        print('Cipher text:', ciphertext.hex())
+    elif choice == '1':
+        ciphertext = bytes.fromhex(input('Enter ciphertext in hex format: '))
