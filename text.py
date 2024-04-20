@@ -32,3 +32,6 @@ while True:
         print('Cipher text:', ciphertext.hex())
     elif choice == '1':
         ciphertext = bytes.fromhex(input('Enter ciphertext in hex format: '))
+        nonce = binascii.unhexlify(input('Enter nonce in hex format: '))
+        plaintext = decrypt(nonce, ciphertext)
+        print('Decrypted text:', plaintext)
