@@ -1,0 +1,23 @@
+
+from Crypto.Cipher import DES3
+from hashlib import md5
+while True:
+    print('Choose operation to be done:\n\t1- Encryption\n\t2- Decryption')
+    operation = input('Your Choice: ')
+    if operation not in ['1', '2']:
+        break
+        
+ 
+    file_path = input('File path: ')
+    
+ 
+    key = input('TDES key: ')
+    key_hash = md5(key.encode('ascii')).digest()
+
+    tdes_key = DES3.adjust_key_parity(key_hash)
+    
+    
+    cipher = DES3.new(tdes_key, DES3.MODE_EAX, nonce=b'0')
+
+    
+    
