@@ -31,7 +31,7 @@ while True:
         print('Nonce:', binascii.hexlify(nonce).decode('ascii'))
         print('Cipher text:', ciphertext.hex())
     elif choice == '2':
-        ciphertext = bytes.fromhex(input('Enter ciphertext in hex format: '))
+        ciphertext = bytes.fromhex(input('Shtyp ciphertext në formatin  hex: '))
         nonce = binascii.unhexlify(input('Enter nonce in hex format: '))
         plaintext = decrypt(nonce, ciphertext)
         print('Decrypted text:', plaintext)
