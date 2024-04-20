@@ -14,3 +14,5 @@ def encrypt(msg):
      nonce = cipher.nonce
      ciphertext = cipher.encrypt(msg.encode('ascii'))
      return nonce, ciphertext
+
+def decrypt(nonce, ciphertext):
