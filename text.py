@@ -5,4 +5,6 @@ import binascii
 while True:
      try:
        key = DES3.adjust_key_parity(get_random_bytes(24))
-       
+        break
+    except ValueError:
+        print("Generated key has incorrect parity. Generating a new key...")
