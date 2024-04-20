@@ -26,7 +26,7 @@ while True:
     print("2. Dekriptim")
     choice = input("Shtyp zgjedhjen tuaj (1 or 2): ")
     if choice == '1':
-        plaintext = input('Enter plaintext: ')
+        plaintext = input('Shtyp plaintext: ')
         nonce, ciphertext = encrypt(plaintext)
         print('Nonce:', binascii.hexlify(nonce).decode('ascii'))
         print('Cipher text:', ciphertext.hex())
