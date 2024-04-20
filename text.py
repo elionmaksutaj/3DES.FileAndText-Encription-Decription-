@@ -10,3 +10,4 @@ while True:
         print("Generated key has incorrect parity. Generating a new key...")
 
 def encrypt(msg):
+     cipher = DES3.new(key, DES3.MODE_EAX)
