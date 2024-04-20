@@ -3,3 +3,5 @@ from Crypto.Random import get_random_bytes
 import binascii
 
 while True:
+     try:
+       
