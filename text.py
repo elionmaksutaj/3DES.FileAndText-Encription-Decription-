@@ -21,8 +21,8 @@ def decrypt(nonce, ciphertext):
      return plaintext.decode('ascii')
 
 while True:
-    print("Choose an option:")
-    print("1. Encrypt")
+    print("Zgjedhe një opsion:")
+    print("1. Enkriptim")
     print("2. Decrypt")
     choice = input("Enter your choice (1 or 2): ")
     if choice == '1':
