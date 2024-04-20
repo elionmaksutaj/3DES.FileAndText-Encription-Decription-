@@ -5,4 +5,4 @@ import binascii
 while True:
      try:
        key = DES3.adjust_key_parity(get_random_bytes(24))
-       except
+       
