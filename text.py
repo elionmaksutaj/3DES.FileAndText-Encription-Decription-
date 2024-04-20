@@ -21,3 +21,4 @@ def decrypt(nonce, ciphertext):
      return plaintext.decode('ascii')
 
 while True:
+    print("Choose an option:")
