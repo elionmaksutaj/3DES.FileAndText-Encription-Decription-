@@ -24,7 +24,7 @@ while True:
     print("Zgjedhe një opsion:")
     print("1. Enkriptim")
     print("2. Dekriptim")
-    choice = input("Enter your choice (1 or 2): ")
+    choice = input("Shtyp zgjedhjen tuaj (1 or 2): ")
     if choice == '1':
         plaintext = input('Enter plaintext: ')
         nonce, ciphertext = encrypt(plaintext)
