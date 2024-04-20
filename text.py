@@ -22,3 +22,6 @@ def decrypt(nonce, ciphertext):
 
 while True:
     print("Choose an option:")
+    print("1. Encrypt")
+    print("2. Decrypt")
+    choice = input("Enter your choice (1 or 2): ")
