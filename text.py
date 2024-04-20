@@ -38,6 +38,6 @@ while True:
      else:
         print("Zgjedhje e pasakt. Të lutem shtyp 1 ose 2.")
 
-        again = input("Do you want to perform another operation? (po/jo): ")
+        again = input("Dëshiron të performon një operacion tjetër? (po/jo): ")
     if again.lower() != 'yes':
         break
