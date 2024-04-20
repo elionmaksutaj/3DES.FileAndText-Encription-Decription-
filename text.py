@@ -19,3 +19,5 @@ def decrypt(nonce, ciphertext):
     cipher = DES3.new(key, DES3.MODE_EAX, nonce=nonce)
     plaintext = cipher.decrypt(ciphertext)
      return plaintext.decode('ascii')
+
+while True:
