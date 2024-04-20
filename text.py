@@ -35,6 +35,9 @@ while True:
         nonce = binascii.unhexlify(input('Enter nonce in hex format: '))
         plaintext = decrypt(nonce, ciphertext)
         print('Decrypted text:', plaintext)
+     else:
+        print("Invalid choice. Please enter 1 or 2.")
+
         again = input("Do you want to perform another operation? (yes/no): ")
     if again.lower() != 'yes':
         break
