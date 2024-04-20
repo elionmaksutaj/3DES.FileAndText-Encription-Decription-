@@ -13,3 +13,4 @@ def encrypt(msg):
      cipher = DES3.new(key, DES3.MODE_EAX)
      nonce = cipher.nonce
      ciphertext = cipher.encrypt(msg.encode('ascii'))
+     return nonce, ciphertext
