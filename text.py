@@ -8,3 +8,5 @@ while True:
         break
     except ValueError:
         print("Generated key has incorrect parity. Generating a new key...")
+
+def encrypt(msg):
