@@ -36,7 +36,7 @@ while True:
         plaintext = decrypt(nonce, ciphertext)
         print('Decrypted text:', plaintext)
      else:
-        print("Zgjedhje e pasakt. Të lutem shtyp 1 ose 2.")
+        print("Zgjedhje e pasaktë. Të lutem shtyp 1 ose 2.")
 
         again = input("Dëshiron të performon një operacion tjetër? (po/jo): ")
     if again.lower() != 'yes':
