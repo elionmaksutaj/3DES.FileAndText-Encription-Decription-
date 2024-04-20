@@ -7,7 +7,7 @@ while True:
        key = DES3.adjust_key_parity(get_random_bytes(24))
         break
     except ValueError:
-        print("Generated key has incorrect parity. Generating a new key...")
+        print("Çelësi i gjeneruar ka barazi të gabuar. Gjenerimi i një çelësi të ri...")
 
 def encrypt(msg):
      cipher = DES3.new(key, DES3.MODE_EAX)
@@ -39,5 +39,5 @@ while True:
         print("Zgjedhje e pasaktë. Të lutem shtyp 1 ose 2.")
 
         again = input("Dëshiron të performon një operacion tjetër? (po/jo): ")
-    if again.lower() != 'yes':
+    if again.lower() != 'po':
         break
